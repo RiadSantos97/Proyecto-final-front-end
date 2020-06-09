@@ -29,10 +29,22 @@ body {
   display:flex;
   background-color: var(--cafeOpaco);
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   justify-content: space-between;
   position: fixed;
   z-index: 2;
+  align-items: center;
+}
+
+.navBarMobile {
+  display: none;
+  background-color: var(--cafeOpaco);
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  align-items: center;
 }
 
 .navBar *{
@@ -47,10 +59,7 @@ body {
 }
 
 .navItem {
-  color: var(--verde);
-  font-family: var(--fontTitulos);
-  font-size: 2.5rem;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .navItem a{
@@ -80,7 +89,7 @@ body {
 .Contenido > h1 {
   color: var(--verde);
   position: absolute;
-  top: 120px;
+  top: 96px;
   left: 24px;
   font-family: var(--fontTitulos);
   font-size: 4rem;
@@ -90,14 +99,14 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 33.36809176225235vh;
+  top: 28.36809176225235vh;
   flex-wrap: wrap;
   word-wrap: break-word;
   align-items: center;
   width: 39.761431411530815vw;
   height: 48.3837330552659vh;
-  min-width: 280px;
-  min-height: 460px;
+  min-width: 17.5rem;
+  min-height: 28.75rem;
   margin: 0rem 3.5rem;
   z-index: 1;
 }
@@ -149,14 +158,77 @@ figure > img {
   background-color: var(--cafe);
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
-  position: absolute;
+  align-items: center;
+  position: fixed;
   bottom: 0;
-  z-index: 2;
+  margin-top: 1.5rem;
 }
 
 .footerText {
   font-family: var(--fontContenido);
   font-size: 1.5rem;
   text-align: center;
+}
+
+@media (max-width: 550px) {
+
+  .navBar {
+    display: none;
+  }
+
+  .navBarMobile {
+    display: flex;
+  }
+
+  .navLeft, .navRight {
+    display: none;
+  }
+
+  .footer {
+    height: 2rem;
+  }
+
+  .footerText {
+    font-size: .8rem;
+  }
+
+  .cardServicios {
+    height: 18.35245046923879vh;
+    width: 19.426048565121413vw;
+    min-width: 176px;
+    min-height: 176px;
+    top: 0;
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+
+  .texto {
+    display: none;
+  }
+
+  .Contenido > h1 {
+    font-size: 2rem;
+    left: 35%;
+  }
+
+  figure {
+    height: 140px;
+    width: 100%;
+  }
+
+  figure > img {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+  }
+
+  .Servicio h2 {
+    font-size: 1rem;
+  }
+
+  .Contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

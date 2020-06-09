@@ -33,12 +33,17 @@ body {
   justify-content: space-between;
   position: fixed;
   z-index: 2;
+  align-items: center;
 }
 
-.navBar *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.navBarMobile {
+  display: none;
+  background-color: var(--cafeOpaco);
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
 }
 
 .navLeft, .navRight {
@@ -47,9 +52,6 @@ body {
 }
 
 .navItem {
-  color: var(--verde);
-  font-family: var(--fontTitulos);
-  font-size: 2.5rem;
   margin: 1rem;
 }
 
@@ -58,12 +60,6 @@ body {
   font-family: var(--fontTitulos);
   font-size: 2.5rem;
   text-decoration: none;
-}
-
-.heroBanner *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .heroBanner {
@@ -135,7 +131,7 @@ body {
 
 .plantasCard {
   width: 46.666666666666664vw;
-  height: 54.34782608695652vh;
+  height: auto;
   border-radius: 8px;
   position: relative;
   top: 0;
@@ -168,12 +164,67 @@ body {
   margin-left: 32px;
 }
 
+.tituloSeccionMobil {
+  display: none;
+  font-family: var(--fontTitulos);
+  margin-left: 2vw;
+}
+
+.rowCardsMobil {
+  display: none;
+  width: 100vw;
+  height: 60vh;
+  justify-content: space-around;
+}
+
+.rowCardsMobil h1 {
+  font-family: var(--fontTitulos);
+  margin-top: 66%;
+}
+
+.cardContainerMobil1 {
+  width: 48%;
+  height: 90%;
+  margin-top: 3vh;
+  border-radius: 24px;
+  background-image: linear-gradient(180deg, rgba(164, 188, 0, 0) 0%, rgba(164, 188, 0, 0.6) 100%), url('https://http2.mlstatic.com/D_NQ_NP_724416-MLM41851241082_052020-W.jpg');
+  background-size: cover;
+}
+
+.cardContainerMobil2 {
+  width: 48%;
+  height: 90%;
+  margin-top: 3vh;
+  border-radius: 24px;
+  background-image: linear-gradient(180deg, rgba(164, 188, 0, 0) 0%, rgba(164, 188, 0, 0.6) 100%), url('https://cordoba-digital.com/wp-content/uploads/2019/03/Azahar.jpg');
+  background-size: cover;
+}
+
+.cardContainerMobil3 {
+  width: 48%;
+  height: 90%;
+  margin-top: 3vh;
+  border-radius: 24px;
+  background-image: linear-gradient(180deg, rgba(164, 188, 0, 0) 0%, rgba(164, 188, 0, 0.6) 100%), url('https://services.meteored.com/img/article/%C2%BFcomo-y-por-que-se-mueven-los-girasoles---1_768.jpg');
+  background-size: cover;
+}
+
+.cardContainerMobil4 {
+  width: 48%;
+  height: 90%;
+  margin-top: 3vh;
+  border-radius: 24px;
+  background-image: linear-gradient(180deg, rgba(164, 188, 0, 0) 0%, rgba(164, 188, 0, 0.6) 100%);
+  background-size: cover;
+}
+
 .footer {
   width: 100%;
   height: 4rem;
   background-color: var(--cafe);
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 1.5rem;
 }
 
@@ -181,10 +232,11 @@ body {
   font-family: var(--fontContenido);
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 2vh;
 }
 
 .about-us {
-  background-image: linear-gradient(rgba(164, 188, 0, 0.5), rgba(164, 188, 0, 0.5)), url(https://sitkascience.org/sssc/wp-content/uploads/2020/02/seed-to-sprout-image-1800x1200.jpg);
+  background-image: linear-gradient(rgba(164, 188, 0, 0.5), rgba(164, 188, 0, 0.5)), url('./Images/fondoAboutUs.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -213,7 +265,7 @@ body {
   margin-right: 8px;
 }
 
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1366px) {
   .bannerBody {
     font-size: 1.5rem;
   }
@@ -221,11 +273,47 @@ body {
   .footerText {
     font-size: 1.2rem;
   }
+
+  .navBar {
+    height: 4rem;
+  }
+
+  .navItem a{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about-us {
+    width: 83vw;
+  }
 }
 
 @media only screen and (max-width: 780px) {
+  .navBar {
+    display: none;
+  }
+
+  .navBarMobile {
+    display: flex;
+  }
+
   .navItem a {
     font-size: 2rem;
+  }
+
+  .fondoBanner {
+    display: none;
+  }
+
+  .bannerContent {
+    width: 95vw;
+    background-image: url('./Images/fondoBanner.png');
+    background-size: cover;
+  }
+
+  .tituloSeccionMobil {
+    display: inline;
   }
 
   .bannerBody {
@@ -234,6 +322,34 @@ body {
 
   .imgBanner {
     height: 70%;
+  }
+
+  .rowCardsMobil {
+    display: flex;
+  }
+
+  .rowCardsMobil h1 {
+    margin-top: 43vh;
+    margin-left: 7%;
+  }
+
+  .cardContainer {
+    display: none;
+  }
+
+  .about-us {
+    width: 95vw;
+    margin-top: 3vh;
+  }
+
+  .about-us .titulo {
+    text-align: center;
+  }
+
+  .about-us .texto {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5%;
   }
 
   .footerText {
@@ -246,12 +362,10 @@ body {
     font-size: 1.7rem;
   }
 
-  .tituloHead {
-    font-size: 1.3rem;
-  }
-
-  .tituloBody {
-    font-size: 2rem;
+  .rowCardsMobil h1 {
+    margin-top: 47vh;
+    margin-left: 7%;
+    font-size: 1.5rem;
   }
 
   .imgBanner {
@@ -263,6 +377,11 @@ body {
   .navItem a {
     font-size: 1.4rem;
   }
+
+  .rowCardsMobil h1 {
+    margin-top: 47vh;
+    margin-left: 7%;
+  }
 }
 
 @media only screen and (max-width: 521px) {
@@ -271,17 +390,23 @@ body {
   }
 
   .tituloHead {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 4.375rem;
   }
 
   .tituloBody {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .bannerBody {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 1.5rem;
+  }
+
+  .rowCardsMobil h1 {
+    margin-top: 47vh;
+    margin-left: 7%;
+    font-size: 1.2rem;
   }
 
   .imgBanner {
@@ -298,6 +423,25 @@ body {
     height: 40%;
   }
 
+  .tituloHead {
+    font-size: 1.1rem;
+    margin-top: 4.375rem;
+  }
+
+  .tituloBody {
+    font-size: 2rem;
+  }
+
+  .bannerBody {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+
+  .rowCardsMobil h1 {
+    margin-top: 47vh;
+    margin-left: 7%;
+  }
+
   .footerText {
     font-size: 0.9rem;
   }
@@ -306,6 +450,14 @@ body {
 @media only screen and (max-width: 426px) {
   .navItem a {
     font-size: 0.8rem;
+  }
+
+  .rowCardsMobil h1 {
+    margin-top: 47vh;
+  }
+
+  .about-us .texto {
+    font-size: 1.2rem;
   }
 }
 
@@ -332,6 +484,10 @@ body {
     margin: 1rem;
   }
 
+  .rowCardsMobil h1 {
+    margin-top: 47vh;
+  }
+
   .footerText {
     font-size: 0.8rem;
   }
@@ -343,16 +499,28 @@ body {
   }
 
   .tituloHead {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-left: 1.3rem;
   }
 
   .tituloBody {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-left: 1.3rem;
   }
 
+  .about-us .texto {
+    font-size: 1rem;
+  }
+
   .bannerBody{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .rowCardsMobil h1 {
     font-size: 0.9rem;
+    margin-top: 47vh;
+    margin-left: 7%;
   }
 }

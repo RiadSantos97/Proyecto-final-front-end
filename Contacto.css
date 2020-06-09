@@ -20,12 +20,24 @@ body {
 
 .navBar {
   display:flex;
-  background-color: var(--cafe);
+  background-color: var(--cafeOpaco);
   width: 100%;
   height: 5rem;
   justify-content: space-between;
   position: relative;
   z-index: 2;
+  align-items: center;
+}
+
+.navBarMobile {
+  display: none;
+  background-color: var(--cafeOpaco);
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  align-items: center;
 }
 
 .navBar *{
@@ -37,6 +49,7 @@ body {
 .navLeft, .navRight {
   display: flex;
   list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .navItem {
@@ -56,10 +69,12 @@ body {
 .footer {
   width: 100%;
   height: 4rem;
-  background-color: var(--cafe);
+  background-color: var(--cafeOpaco);
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
+  position: fixed;
+  bottom: 0;
 }
 
 .footerText {
@@ -156,7 +171,7 @@ body {
   margin-left: 77vw;
 }
 
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1366px) {
   .bannerBody {
     font-size: 1.5rem;
   }
@@ -168,11 +183,11 @@ body {
   .contactoTitle {
     font-size: 2.2rem;
   }
-  
+
   .contactoHead {
     font-size: 1.2rem;
   }
-  
+
   .inputLabel {
     font-size: 1.2rem;
   }
@@ -181,21 +196,44 @@ body {
     font-size: 1.2rem;
     padding: 0.5rem;
   }
+
+  .navBar {
+    height: 4rem;
+  }
+
+  .navItem a{
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 780px) {
+  .navBar {
+    display: none;
+  }
+
+  .navBarMobile {
+    display: flex;
+  }
+
   .navItem a {
     font-size: 2rem;
+  }
+
+  .contactoContainer {
+    height: -moz-calc(100vh - 9.5rem);
+    height: -webkit-calc(100vh - 9.5rem);
+    height: -o-calc(100vh - 9.5rem);
+    height: calc(100vh - 9.5rem);
   }
 
   .contactoTitle {
     font-size: 2rem;
   }
-  
+
   .contactoHead {
     font-size: 1rem;
   }
-  
+
   .inputLabel {
     font-size: 1rem;
   }
@@ -236,11 +274,11 @@ body {
   .contactoTitle {
     font-size: 1.8rem;
   }
-  
+
   .contactoHead {
     font-size: 0.8rem;
   }
-  
+
   .inputLabel {
     font-size: 0.8rem;
   }
@@ -259,11 +297,11 @@ body {
   .contactoTitle {
     font-size: 1.8rem;
   }
-  
+
   .contactoHead {
     font-size: 0.8rem;
   }
-  
+
   .inputLabel {
     font-size: 0.6rem;
   }
