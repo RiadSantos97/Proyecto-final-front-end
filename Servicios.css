@@ -161,3 +161,62 @@ figure > img {
   font-size: 1.5rem;
   text-align: center;
 }
+
+@media (max-width: 550px) {
+
+  .navBar {
+    height: 2rem;
+  }
+
+  .navLeft, .navRight {
+    display: none;
+  }
+
+  .footer {
+    height: 2rem;
+  }
+
+  .footerText {
+    font-size: .8rem;
+  }
+
+  .cardServicios {
+    height: 18.35245046923879vh;
+    width: 19.426048565121413vw;
+    min-width: 176px;
+    min-height: 176px;
+    top: 0;
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+
+  .texto {
+    display: none;
+  }
+
+  .Contenido > h1 {
+    font-size: 2rem;
+    left: 38%;
+  }
+
+  figure {
+    height: 140px;
+    width: 100%;
+  }
+
+  figure > img {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+  }
+
+  .Servicio h2 {
+    font-size: 1rem;
+  }
+
+  .Contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
