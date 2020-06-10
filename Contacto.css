@@ -4,6 +4,7 @@
   --cafe: #A88F6B;
   --cafeOpaco: rgba(168, 143, 107, 0.7);
   --verdeClaro: #A4BC00;
+  --gris: #C4C4C4;
   --verde: #546F01;
   --sombra: #828282;
   --grisClaro: #E8E6E6;
@@ -159,6 +160,14 @@ body {
   margin-left: 77vw;
 }
 
+input::placeholder {
+  color: var(--grisClaro);
+}
+
+textarea::placeholder {
+  color: var(--grisClaro);
+}
+
 @media only screen and (max-width: 1366px) {
   .bannerBody {
     font-size: 1.5rem;
@@ -194,6 +203,86 @@ body {
   }
 }
 
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .navItem a {
+    font-size: 2rem;
+  }
+
+  .imgBanner {
+    height: 40%;
+  }
+
+  .footerText {
+    font-size: 1.2rem;
+  }
+
+  .contactoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactoTitle {
+    font-size: 4rem;
+    left: 35%;
+  }
+
+  .contactoHead {
+    font-size: 2rem;
+  }
+
+  .inputLabel {
+    display: none;
+  }
+
+  .contactoBody {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input::placeholder {
+    color: var(--gris);
+    font-size: 2.5rem;
+  }
+
+  textarea::placeholder {
+    color: var(--gris);
+    font-size: 2.5rem;
+  }
+
+  .contactoContent {
+    width: 85%;
+  }
+
+  .inputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inputNombre, .inputEmail, .inputTel {
+    width: 100%;
+    height: 5rem;
+  }
+
+  .inputMens {
+    height: 34.383419689119172vh;
+    width: 100%;
+  }
+
+  .inputEmail {
+    margin-left: 1vw;
+  }
+
+  .contactoBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .navItem a {
     font-size: 2rem;
@@ -218,6 +307,86 @@ body {
 
   .footerText {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navItem a {
+    font-size: 1.5rem;
+  }
+
+  .imgBanner {
+    height: 40%;
+  }
+
+  .footerText {
+    font-size: 1.2rem;
+  }
+
+  .contactoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactoTitle {
+    font-size: 3rem;
+    left: 35%;
+  }
+
+  .contactoHead {
+    font-size: 2rem;
+  }
+
+  .inputLabel {
+    display: none;
+  }
+
+  .contactoBody {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input::placeholder {
+    color: var(--gris);
+    font-size: 1.5rem;
+  }
+
+  textarea::placeholder {
+    color: var(--gris);
+    font-size: 1.5rem;
+  }
+
+  .contactoContent {
+    width: 85%;
+  }
+
+  .inputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inputNombre, .inputEmail, .inputTel {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .inputMens {
+    height: 26.383419689119172vh;
+    width: 100%;
+  }
+
+  .inputEmail {
+    margin-left: 1vw;
+  }
+
+  .contactoBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -297,6 +466,157 @@ body {
   .footerText {
     font-size: 0.9rem;
   }
+
+  .contactoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactoTitle {
+    font-size: 2rem;
+    left: 37%;
+  }
+
+  .contactoHead {
+    font-size: 1.5rem;
+  }
+
+  .inputLabel {
+    display: none;
+  }
+
+  .contactoBody {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input::placeholder {
+    color: var(--gris);
+    font-size: 1.5rem;
+  }
+
+  textarea::placeholder {
+    color: var(--gris);
+    font-size: 1.5rem;
+  }
+
+  .contactoContent {
+    width: 85%;
+  }
+
+  .inputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inputNombre, .inputEmail, .inputTel {
+    width: 100%;
+    height: 4.352331606217617vh;
+  }
+
+  .inputMens {
+    height: 22.383419689119172vh;
+    width: 100%;
+  }
+
+  .inputEmail {
+    margin-left: 1vw;
+  }
+
+  .contactoBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 376px) and (max-height: 668px) {
+
+  .navItem a {
+    font-size: 1rem;
+  }
+
+  .imgBanner {
+    height: 40%;
+  }
+
+  .footerText {
+    font-size: 0.9rem;
+  }
+
+  .contactoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactoTitle {
+    font-size: 2rem;
+    left: 35%;
+  }
+
+  .contactoHead {
+    font-size: 1.1rem;
+  }
+
+  .inputLabel {
+    display: none;
+  }
+
+  .contactoBody {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input::placeholder {
+    color: var(--gris);
+    font-size: 1.5rem;
+  }
+
+  textarea::placeholder {
+    color: var(--gris);
+    font-size: 1.5rem;
+  }
+
+  .contactoContent {
+    width: 85%;
+  }
+
+  .inputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inputNombre, .inputEmail, .inputTel {
+    width: 100%;
+    height: 2rem;
+  }
+
+  .inputMens {
+    height: 22.383419689119172vh;
+    width: 100%;
+  }
+
+  .inputEmail {
+    margin-left: 1vw;
+  }
+
+  .contactoBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 @media only screen and (max-width: 426px) {
@@ -305,7 +625,8 @@ body {
   }
 
   .inputEmail, .inputTel {
-    width: 33vw;
+    width: 100%;
+    margin-left: 1vw;
   }
 }
 
@@ -343,7 +664,7 @@ body {
   }
 
   .inputEmail, .inputTel {
-    width: 32vw;
+    width: 100%;
   }
 
   .inputSend {
@@ -354,4 +675,33 @@ body {
   .bannerBody{
     font-size: 0.9rem;
   }
-}
+
+  @media only screen and (max-width: 321px) {
+    .contactoHead {
+        font-size: .9rem;
+    }
+
+    .inputNombre, .inputEmail, .inputTel {
+      width: 100%;
+      height: 1.5rem;
+    }
+
+    input::placeholder {
+      color: var(--gris);
+      font-size: 1rem;
+    }
+
+    .inputMens {
+      height: 20.383419689119172vh;
+      width: 100%;
+    }
+
+    textarea::placeholder {
+      color: var(--gris);
+      font-size: 1rem;
+    }
+
+  }
+
+
+  }
