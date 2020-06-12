@@ -84,6 +84,7 @@ body {
   position: absolute;
   bottom: 2.813rem;
   border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .tituloHead {
