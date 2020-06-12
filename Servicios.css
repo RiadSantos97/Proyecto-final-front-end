@@ -34,17 +34,7 @@ body {
   position: fixed;
   z-index: 2;
   align-items: center;
-}
 
-.navBarMobile {
-  display: none;
-  background-color: var(--cafeOpaco);
-  width: 100%;
-  height: 4rem;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 2;
-  align-items: center;
 }
 
 .navBar *{
@@ -322,10 +312,6 @@ figure > img {
     display: none;
   }
 
-  .Contenido {
-    height: calc(100vh + 25rem);
-  }
-
   .Contenido > h1 {
     font-size: 3rem;
     left: 40%;
@@ -362,14 +348,6 @@ figure > img {
 @media only screen and (max-width: 768px) {
   .navItem a {
     font-size: 2rem;
-  }
-
-  .navBar {
-    display: none;
-  }
-
-  .navBarMobile {
-    display: flex;
   }
 
   .contactoTitle {
@@ -507,10 +485,6 @@ figure > img {
     height: 40%;
   }
 
-  .Contenido > h1 {
-    left: 28%;
-  }
-
   .footerText {
     font-size: 0.9rem;
   }
@@ -522,8 +496,6 @@ figure > img {
     height: 2rem;
   }
 
-  .footer {
-    height: 4rem;
   }
 
   .footerText {
@@ -576,8 +548,6 @@ figure > img {
     height: 2rem;
   }
 
-  .footer {
-    height: 4rem;
   }
 
   .footerText {
@@ -630,8 +600,6 @@ figure > img {
     height: 2rem;
   }
 
-  .footer {
-    height: 4rem;
   }
 
   .footerText {
@@ -684,8 +652,6 @@ figure > img {
     height: 2rem;
   }
 
-  .footer {
-    height: 4rem;
   }
 
   .footerText {
@@ -733,21 +699,14 @@ figure > img {
 }
 
 /*Iphone 6/7/8*/
-@media only screen and (max-width: 375px) {
   .navBar {
     height: 2rem;
   }
 
-  .footer {
-    height: 4rem;
   }
 
   .footerText {
     font-size: .8rem;
-  }
-
-  .Contenido {
-    height: 125vh;
   }
 
   .Contenido > h1 {
@@ -796,27 +755,12 @@ figure > img {
 
 }
 
-@media only screen and (max-width: 320px) {
-
-  .Contenido > h1 {
-    font-size: 1.5rem;
-  }
-
-  .Contenido > h1 {
-    font-size: 2rem;
-    left: 31%;
-  }
-
-}
-
 /*Galaxy S5 y Moto G4*/
 @media only screen and (width: 360px) and (height: 640px) {
   .navBar {
     height: 2rem;
   }
 
-  .footer {
-    height: 4rem;
   }
 
   .footerText {
@@ -889,12 +833,6 @@ figure > img {
 
   .footerText {
     font-size: 0.8rem;
-  }
-}
-
-@media only screen and (min-height: 630px) {
-  .Contenido {
-    height: 100vh;
   }
 }
 
